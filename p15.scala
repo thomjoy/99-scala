@@ -8,6 +8,6 @@ object p15
 
     def duplicateN[A](n: Int, ls: List[A]): List[A] =
     {
-        ls flatMap { List.make(n, _) }
+        ls flatMap { List.fill(n)(_) }
     }
 }
